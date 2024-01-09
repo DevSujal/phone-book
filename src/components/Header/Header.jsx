@@ -34,13 +34,12 @@ const Header = (props) => {
         onClick={handleEvent}
         style={props.isdarkthemeEnabled ? props.dark_theme : {}}
       />
-        <div
-          className={isVisible ? "navbar" : "navbar2"}
+        {isVisible && <div className="navbar"
           style={props.isdarkthemeEnabled ? props.dark_theme : {}}
         >
           <ul>
             <li>
-              <Link to="/" className="links">
+              <Link to="/phone-book" className="links">
                 <Home />
                 <span>Home</span>
               </Link>
@@ -69,7 +68,7 @@ const Header = (props) => {
               </span>
             </li>
           </ul>
-        </div>
+        </div>}
       <div
         className="searchbar flex"
         style={props.isdarkthemeEnabled ? props.dark_theme : {}}

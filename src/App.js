@@ -88,7 +88,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/phone-book"
             element={
               <PhoneBook
                 name={name}
