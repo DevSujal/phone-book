@@ -42,6 +42,10 @@
     box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
     gap: 20px;
 }
+
+.navbar2 {
+    display: none;
+}
 .navbar ul {
     display: flex;
     flex-direction: column;

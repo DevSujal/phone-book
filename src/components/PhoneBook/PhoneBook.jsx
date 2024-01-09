@@ -23,7 +23,7 @@ const PhoneBook = ({
 }) => {
   return (
     <div className="phonebook">
-      {data.length === 0 && <span style = {isdarkthemeEnabled ? dark_theme : {}}>Phone Book is empty</span> }
+      {data.length === 0 && <span className="span" style = {isdarkthemeEnabled ? dark_theme : {}}>Phone Book is empty</span> }
       {data.map((value, index) => {
         return (
           <Phone

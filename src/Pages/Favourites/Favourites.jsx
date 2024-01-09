@@ -1,4 +1,3 @@
-import Phone from "../../components/PhoneBook/Phone/Phone";
 import "./Favourites.css";
 
 const Favourites = (props) => {
