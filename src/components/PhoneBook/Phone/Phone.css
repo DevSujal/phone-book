@@ -1,0 +1,34 @@
+.phone {
+  width: 100%;
+  padding: 20px;
+  background: var(--main-color);
+  border-radius: 10px;
+  gap: 20px;
+  -webkit-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.phone img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.phone span {
+  font-size: 20px;
+}
+
+.star {
+  position: absolute;
+  right: 40px;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 90%;
+  gap: 30px;
+}

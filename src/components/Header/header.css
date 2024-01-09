@@ -1,0 +1,88 @@
+.header {
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.toglearrow {
+    background: var(--main-color);
+    font-size: 36px !important;
+    border-radius: 5px;
+    flex: 1;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);  
+
+    &.rotatedown {
+        transition: all ease .5s;
+        transform: rotate(180deg);
+    }
+    
+    &.rotateup {
+        transition: all ease .5s;
+        transform: rotate(0deg);
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 60px;
+    left: 20px;
+    z-index: 999;
+    padding: 10px 5px;
+    background: var(--main-color);
+    border-radius: 10px;
+    background: var(--bg-color);
+    -webkit-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    gap: 20px;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.navbar li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: rgb(233, 233, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    cursor: pointer;
+    }
+.searchbar {
+    height: 40px;
+    background: var(--main-color);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 10px;
+    flex: 9;
+    gap: 10px;
+    -webkit-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+}
+
+.searchbar input {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
