@@ -88,7 +88,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path="/phone-book"
+            path="/phone-book/"
             element={
               <PhoneBook
                 name={name}
@@ -114,7 +114,7 @@ const App = () => {
           ></Route>
           <Route
             exact
-            path="/Favourites"
+            path="/phone-book/Favourites"
             element={
               <Favourites
                 isdarkthemeEnabled={isdarkthemeEnabled}
@@ -124,7 +124,7 @@ const App = () => {
           ></Route>
           <Route
             exact
-            path="/Settings"
+            path="/phone-book/Settings"
             element={
               <Settings
                 isdarkthemeEnabled={isdarkthemeEnabled}

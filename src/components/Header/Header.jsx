@@ -39,19 +39,19 @@ const Header = (props) => {
         >
           <ul>
             <li>
-              <Link to="/phone-book" className="links">
+              <Link to="/phone-book/" className="links">
                 <Home />
                 <span>Home</span>
               </Link>
             </li>
             <li>
-              <Link to="/Favourites" className="links">
+              <Link to="/phone-book/Favourites" className="links">
                 <Star />
                 <span>Favourite</span>
               </Link>
             </li>
             <li>
-              <Link to="/Settings" className="links">
+              <Link to="/phone-book/Settings" className="links">
                 <Settings />
                 <span>Settings</span>
               </Link>
