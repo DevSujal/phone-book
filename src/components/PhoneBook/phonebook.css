@@ -15,9 +15,15 @@
   padding: 20px;
   gap: 30px;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
-  box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+
+  &.dark-form {
+    -webkit-box-shadow: 0px 0px 500px -9px rgb(255, 255, 255, 0.6);
+    -moz-box-shadow: 0px 0px 500px -9px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 500px -9px rgba(255, 255, 255, 0.6);
+  }
 }
 .form label {
   width: 100%;
@@ -63,54 +69,55 @@
   cursor: pointer;
 }
 
-.scrolled {
-  transition: all ease 0.5s;
-  background: var(--bg-color);
-}
-
 .displayInfo {
-    position: fixed;
-    top: 20%;
-    background: var(--main-color);
-    -webkit-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);
-    box-shadow: 0px 0px 25px -9px rgba(0, 0, 0, 0.4);
-    width: 90%; 
-    flex-direction: column;
-    gap: 30px;
-    border-radius: 10px;
-    padding: 20px;
-    cursor: pointer;
+  position: fixed;
+  top: 20%;
+  background: var(--main-color);
+  -webkit-box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 500px -9px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  flex-direction: column;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+
+  &.displayInfo-dark {
+    -webkit-box-shadow: 0px 0px 500px -9px rgb(255, 255, 255, 0.6);
+    -moz-box-shadow: 0px 0px 500px -9px rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 0px 500px -9px rgba(255, 255, 255, 0.6);
+  }
 }
 .displayInfo img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .displayInfo span {
-    font-size: large;
+  font-size: large;
 }
 
 .buttons {
-    width: 100%;
-    justify-content: space-around;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .buttons button {
-    width: 120px;
-    height: 40px;
-    background: blue;
-    border: none;
-    border-radius: 5px;
-    color: var(--main-color);
-    font-size: large;
-    cursor: pointer;
+  width: 120px;
+  height: 40px;
+  background: blue;
+  border: none;
+  border-radius: 5px;
+  color: var(--main-color);
+  font-size: large;
+  cursor: pointer;
 }
 
 .delete {
-    background: red !important;
+  background: red !important;
 }
 
 .span {
@@ -120,4 +127,3 @@
   align-items: center;
   justify-content: center;
 }
-

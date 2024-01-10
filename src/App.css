@@ -14,3 +14,18 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (min-width : 600px) {
+  .app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    -webkit-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px -14px rgba(0, 0, 0, 0.4);
+    height: 90%;
+    border-radius: 5px;
+  }
+}

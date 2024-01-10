@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import PhoneBook from "./components/PhoneBook/PhoneBook";
@@ -6,6 +6,7 @@ import { useState } from "react";
 import img from "./components/PhoneBook/logo.webp";
 import Favourites from "./Pages/Favourites/Favourites";
 import Settings from "./Pages/Settings/Settings";
+import Notavailable from "./Pages/Notavailable/Notavailble";
 
 const App = () => {
   const dark_theme = {
@@ -79,7 +80,7 @@ const App = () => {
       className="app"
       style={isdarkthemeEnabled ? { background: "rgb(45, 43, 43)" } : {}}
     >
-      <BrowserRouter>
+      <HashRouter>
         <Header
           setIsDarkThemeEnabled={setIsDarkThemeEnabled}
           isdarkthemeEnabled={isdarkthemeEnabled}
@@ -88,7 +89,7 @@ const App = () => {
         <Routes>
           <Route
             exact
-            path="/phone-book/"
+            path=""
             element={
               <PhoneBook
                 name={name}
@@ -114,7 +115,7 @@ const App = () => {
           ></Route>
           <Route
             exact
-            path="/phone-book/Favourites"
+            path="Favourites"
             element={
               <Favourites
                 isdarkthemeEnabled={isdarkthemeEnabled}
@@ -124,7 +125,7 @@ const App = () => {
           ></Route>
           <Route
             exact
-            path="/phone-book/Settings"
+            path="Settings"
             element={
               <Settings
                 isdarkthemeEnabled={isdarkthemeEnabled}
@@ -132,8 +133,18 @@ const App = () => {
               />
             }
           ></Route>
+          <Route
+            exact
+            path="*"
+            element={
+              <Notavailable
+                isdarkthemeEnabled={isdarkthemeEnabled}
+                dark_theme={dark_theme}
+              />
+            }
+          ></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };

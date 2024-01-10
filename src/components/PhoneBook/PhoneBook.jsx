@@ -41,7 +41,7 @@ const PhoneBook = ({
       })}
 
       {info && (
-        <div className="displayInfo flex" style={isdarkthemeEnabled ? dark_theme : {}}>
+        <div className={isdarkthemeEnabled ? "displayInfo flex displayInfo-dark" : "displayInfo flex"} style={isdarkthemeEnabled ? dark_theme : {}}>
           <img src={info.img} alt="profile" />
           <span>Name : {info.name}</span>
           <span>Mobile No : {info.number}</span>
@@ -62,7 +62,7 @@ const PhoneBook = ({
         </div>
       )}
       {isVisible && (
-        <div className="form flex" style={isdarkthemeEnabled ? dark_theme : {}}>
+        <div className={isdarkthemeEnabled ? "form flex dark-form" : "form flex"} style={isdarkthemeEnabled ? dark_theme : {}}>
           <span>Enter Your Details</span>
           <label>
             Name

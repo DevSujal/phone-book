@@ -22,8 +22,6 @@
 }
 
 .star {
-  position: absolute;
-  right: 40px;
   font-size: 30px !important;
   cursor: pointer;
 }

@@ -28,7 +28,7 @@ const Header = (props) => {
     };
   };
   return (
-    <div className={isScrolled ? "header flex scrolled" : "header flex"}>
+    <div className={isScrolled ?  props.isdarkthemeEnabled ? "header flex scrolled" : "header flex scrolled dark-scrolled" : "header flex"}>
       <ArrowUpward
         className={isVisible ? "toglearrow rotatedown" : "toglearrow rotateup"}
         onClick={handleEvent}
@@ -39,19 +39,19 @@ const Header = (props) => {
         >
           <ul>
             <li>
-              <Link to="/phone-book/" className="links">
+              <Link to="/" className="links">
                 <Home />
                 <span>Home</span>
               </Link>
             </li>
             <li>
-              <Link to="/phone-book/Favourites" className="links">
+              <Link to="Favourites" className="links">
                 <Star />
                 <span>Favourite</span>
               </Link>
             </li>
             <li>
-              <Link to="/phone-book/Settings" className="links">
+              <Link to="Settings" className="links">
                 <Settings />
                 <span>Settings</span>
               </Link>
